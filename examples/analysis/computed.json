@@ -1,0 +1,118 @@
+{
+  "n_companies": 480,
+  "regions": [
+    "Northeast",
+    "Southeast",
+    "Midwest",
+    "West"
+  ],
+  "cohorts": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "resolution_hours_by_region_cohort": {
+    "Northeast": {
+      "2022": 6.56,
+      "2023": 7.39,
+      "2024": 8.87,
+      "2025": 8.91
+    },
+    "Southeast": {
+      "2022": 9.32,
+      "2023": 9.27,
+      "2024": 8.61,
+      "2025": 9.04
+    },
+    "Midwest": {
+      "2022": 8.04,
+      "2023": 7.72,
+      "2024": 8.87,
+      "2025": 8.04
+    },
+    "West": {
+      "2022": 12.29,
+      "2023": 10.92,
+      "2024": 9.47,
+      "2025": 8.21
+    }
+  },
+  "change_first_to_last_cohort": {
+    "Northeast": {
+      "first": 6.56,
+      "last": 8.91,
+      "pct_change": 35.8,
+      "direction": "degraded"
+    },
+    "Southeast": {
+      "first": 9.32,
+      "last": 9.04,
+      "pct_change": -3.0,
+      "direction": "improved"
+    },
+    "Midwest": {
+      "first": 8.04,
+      "last": 8.04,
+      "pct_change": 0.0,
+      "direction": "degraded"
+    },
+    "West": {
+      "first": 12.29,
+      "last": 8.21,
+      "pct_change": -33.2,
+      "direction": "improved"
+    }
+  },
+  "best_worst_gap": {
+    "first_cohort": 5.73,
+    "last_cohort": 1.0,
+    "narrowed_by_pct": 82.5
+  },
+  "resolution_vs_csat": {
+    "pearson_r": -0.694,
+    "csat_points_per_hour": -0.131,
+    "intercept": 5.0,
+    "r_squared": 0.482
+  },
+  "within_region_distribution": {
+    "Northeast": {
+      "p10": 4.74,
+      "p25": 6.22,
+      "median": 7.97,
+      "p75": 9.47,
+      "p90": 10.53,
+      "p90_minus_p10": 5.78
+    },
+    "Southeast": {
+      "p10": 6.77,
+      "p25": 7.71,
+      "median": 9.2,
+      "p75": 11.25,
+      "p90": 12.33,
+      "p90_minus_p10": 5.56
+    },
+    "Midwest": {
+      "p10": 5.59,
+      "p25": 6.58,
+      "median": 8.0,
+      "p75": 9.33,
+      "p90": 10.58,
+      "p90_minus_p10": 4.99
+    },
+    "West": {
+      "p10": 6.98,
+      "p25": 8.23,
+      "median": 10.32,
+      "p75": 12.01,
+      "p90": 14.07,
+      "p90_minus_p10": 7.1
+    }
+  },
+  "within_vs_between": {
+    "widest_within_region_spread": 7.1,
+    "narrowest_within_region_spread": 4.99,
+    "between_region_gap": 2.35,
+    "within_exceeds_between": true
+  }
+}
