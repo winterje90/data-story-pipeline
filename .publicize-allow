@@ -1,0 +1,7 @@
+# Substrings the private-context scanner should not flag in THIS repo.
+#
+# winterje90 — the GitHub account that owns this repo. It necessarily appears in
+# the clone URL in README.md, and is already public in the repo's own address, so
+# repeating it adds no exposure. Suppressed here rather than in the global term
+# list, which should keep treating it as identifying everywhere else.
+winterje90

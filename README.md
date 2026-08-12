@@ -44,7 +44,7 @@ You do **not** need a data warehouse. A CSV is a first-class input.
 ## Install
 
 ```bash
-git clone https://github.com/<owner>/data-story-pipeline.git
+git clone https://github.com/winterje90/data-story-pipeline.git
 cd data-story-pipeline
 cp -R skills/* ~/.claude/skills/
 pip install -r requirements.txt
