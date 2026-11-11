@@ -14,13 +14,27 @@
 
 ## Headline Findings
 
-1. **Median ticket resolution in the West improved 33.2% across cohorts — from 12.3h in the 2022 cohort to 8.2h in 2025 — while the Northeast degraded 35.8% over the same window (6.6h to 8.9h).**
+1. **Median ticket resolution in the West improved 33.2% across cohorts — from 12.3h in the 2022 cohort to 8.2h in 2025 — while the Northeast degraded 35.8% over the same window (6.6h to 8.9h).** *(measured)*
 
-2. **The gap between the fastest and slowest region collapsed 82.5%, from 5.73 hours in the 2022 cohort to 1.00 hour in 2025.** Four regions that were clearly differentiated four years ago are now effectively indistinguishable on this metric.
+2. **The gap between the fastest and slowest region collapsed 82.5%, from 5.73 hours in the 2022 cohort to 1.00 hour in 2025.** *(measured)* Four regions that were clearly differentiated four years ago are now effectively indistinguishable on this metric.
 
-3. **Resolution time and satisfaction correlate at r = −0.694 (R² = 0.482).** Each additional hour of resolution time costs roughly 0.131 CSAT points. Resolution speed explains a little under half the variance in satisfaction — meaningful, but not the whole story.
+3. **Resolution time and satisfaction correlate at r = −0.694 (R² = 0.482).** *(measured: the correlation. Inferred, not shown: that faster resolution causes higher satisfaction.)* Each additional hour of resolution time costs roughly 0.131 CSAT points. Resolution speed explains a little under half the variance in satisfaction — meaningful, but not the whole story.
 
-4. **The spread within every region is wider than the gap between regions.** The narrowest within-region spread (Midwest, 4.99h from P10 to P90) is more than double the entire between-region gap (2.35h). Knowing a company's region tells you very little about its actual resolution time.
+4. **The spread within every region is wider than the gap between regions.** The narrowest within-region spread (Midwest, 4.99h from P10 to P90) is more than double the entire between-region gap (2.35h). *(measured)* Knowing a company's region tells you very little about its actual resolution time.
+
+## Selection Menu
+
+Candidates considered, with what was chosen and why:
+
+| Candidate | Chosen? | Reason |
+|---|---|---|
+| Median resolution by region × cohort (full grid) | Yes — finding 1 | Largest movement in the dataset; full trajectory available for every cell |
+| Best-to-worst regional gap over time | Yes — finding 2 | Summarizes the convergence in one number |
+| Resolution time vs. CSAT correlation | Yes — finding 3 | Tests whether the speed metric matters to customers |
+| Within-region vs. between-region spread | Yes — finding 4 | Checks whether the region cut is informative at all |
+| CSAT by region × cohort | No | Moves with resolution time (finding 3); adds no separate story |
+| Monthly ticket volume by region | No | Volume shows no pattern by region or cohort; nothing to report |
+| Region × cohort split further by employee-count band | No | Three bands leave about 10 companies per cell; percentiles would be unreliable |
 
 ## Anomalies & Surprises
 

@@ -238,6 +238,18 @@ Before forming findings or narrative angles, **show the user the raw summary tab
 - Always show the full trajectory (every cohort, every period). Never compare only two time periods without showing everything in between.
 - Present both absolute numbers and normalized metrics (e.g., both "units added" and "units per dollar"). Explain why both matter.
 - Include percentile distributions (P10, P25, median, P75, P90) when showing entity-level metrics, not just medians.
+- Show both the fully measurable cut (cohorts with complete observation windows) and the partially observed cut (recent cohorts still filling in), with expected-vs-actual trendlines so incomplete periods aren't misread as declines.
+
+## Standing Analysis Rules
+
+These apply at every step. Each one guards against a mistake that is easy to make and hard to spot after publication.
+
+1. **No silent narrowing.** Before choosing which charts, findings, frames, or cohorts to use, list the full menu first. Then select from it visibly, with a reason for each pick and each cut. Never default to a short list without showing what was left out.
+2. **No hand-curated cohorts or lists.** Define every cohort, peer group, or entity list by a data rule (deciles, percentile bands, a stated screen). Never hand-pick named entities into a group.
+3. **Don't trim outliers when concentration is the question.** If the hypothesis is that a few entities drive the result, the outliers are the finding. Verify those entities are real and correctly matched instead of removing them.
+4. **Use the freshest available data.** Run through the most recent complete period the source has. Don't stop at a convenient year-end cutoff.
+5. **Verify the data before doubting it.** If a number looks too big or too small, check it against the source before dismissing it. Priors about recent magnitudes go stale fast.
+6. **Label facts vs. inference.** Mark every claim as either measured directly in the data or inferred from it (e.g., a mechanism inferred from a share shift). Never present an inference as a measurement.
 
 ## Step 4: Find 3-5 Headline Findings
 
@@ -276,10 +288,13 @@ Use this exact structure:
 - Tables or files queried: [list]
 
 ## Headline Findings
-1. [Quantified finding — specific number, surprising]
-2. [Quantified finding]
-3. [Quantified finding]
+1. [Quantified finding — specific number, surprising] *(measured | inferred)*
+2. [Quantified finding] *(measured | inferred)*
+3. [Quantified finding] *(measured | inferred)*
 (up to 5)
+
+## Selection Menu
+- [Every candidate finding, frame, cohort cut, and chart considered — mark which were chosen and why the rest were not]
 
 ## Anomalies & Surprises
 - [Anything that contradicted expectations or can't easily be explained]

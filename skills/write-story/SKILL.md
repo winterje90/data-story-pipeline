@@ -100,6 +100,7 @@ Data source details, sample sizes, known limitations, what the data cannot prove
 - Every claim quantified — "62% of companies" not "many companies", "23% faster" not "significantly faster"
 - Methodology transparency: cite sample size and source whenever making a claim
 - Surface contradictions: at least one finding should challenge something readers assume is true
+- Facts vs. inference: say plainly which claims the data measures and which are inferred from it. Carry the *(measured | inferred)* labels from findings.md into the prose.
 
 ## Step 4: Generate Charts
 
@@ -184,6 +185,8 @@ Generate one script per finding, modify the data and chart type, run each one, v
 - Consistent primary color (`#2C5F8A` by default; override via `chart_color` in your config file) across all charts in one article
 - Minimum 1200px wide (figsize=(12,X) at dpi=150 = ~1800px)
 - White background
+- **Standalone:** every chart and table must make sense when screenshotted on its own. Put the definitions, units, population, and source inside the image or its caption. No undefined shorthand (cohort nicknames, internal acronyms, unexplained "TTM").
+- **Full menu first:** before generating charts, list every chart the findings could support, then pick visibly with reasons (see the Standing Analysis Rules in `analyze-data`).
 
 ## Step 5: Invoke `linkedin-schedule`
 
@@ -203,6 +206,8 @@ ls "$OUTPUT_DIR/YYYY-MM-DD-<topic>/charts/"
 ls "$OUTPUT_DIR/YYYY-MM-DD-<topic>/linkedin-posts/"
 # Expected: 01-hero-*.md, 02-deep-dive-*.md, etc.
 ```
+
+For review, show the user a rendered version of the article (HTML with charts in place), not raw markdown.
 
 Tell the user: "Article, charts, and LinkedIn posting schedule complete. All files saved to `{output_dir}/[folder]/`."
 
